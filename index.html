@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./imgs/sample13.png" />
+    <link rel="shortcut icon" href="./imgs/githubicon.png" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
@@ -13,11 +13,9 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
 
     <title>portfolio_site_No.3</title>
   </head>
@@ -28,7 +26,7 @@
       <div class="l-width">
         <!-- sp-menu -->
         <div class="sp-menu">
-          <div class="menu-triger js-toggle-sp-menu">
+          <div class="hamburger-logo js-toggle-hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -41,10 +39,8 @@
           </div>
         </div>
         <!-- sp-menu -->
-        <div class="header-one logo">
-          <img src="./imgs/sample14.jpg" alt="icon" />
-        </div>
-        <div class="header-two list js-toggle-sp-menu-target">
+       
+        <div class="header-two list js-toggle-hamburger-slidemenu">
           <nav>
             <ul class="menu">
               <li class="menu-list js-menu-list">
@@ -63,10 +59,10 @@
                 <a href="" class="menu-link"> <span>館内</span></a>
               </li>
               <li class="menu-list js-menu-list">
-                <a href="" class="menu-link"><span>アクティビティ</span></a>
+                <a href="" class="menu-link"><span class="only-you">アクティビティ</span></a>
               </li>
               <li class="menu-list js-menu-list">
-                <a href="" class="menu-link"> <span>WEBマガジン</span></a>
+                <a href="" class="menu-link"> <span class="only-you">WEBマガジン</span></a>
               </li>
               <li class="menu-list js-menu-list">
                 <a href="" class="menu-link"> <span>アクセス</span></a>
@@ -136,7 +132,7 @@
         </div>
       </div>
       <!-- スライダー＋宿泊検索 -->
-      <div class="container-slider-and-reservation bg-slider lp-width">
+      <div class="container-slider-and-reservation lp-width bg-slider">
         <div class="l-width">
           <div class="slider-bg">
             <div class="contents">
@@ -365,10 +361,12 @@
         </div>
       </div>
       <!-- 　おすすめ情報 -->
+      
       <div class="container-infor lp-width">
         <div class="l-width">
           <div class="heading"><h2>おすすめ情報</h2></div>
           <!-- スライダー全部で6つの画像 -->
+          
           <div class="arrow-left">
             <i class="fa fa-angle-left slider__nav slider__prev js-slide-prev" aria-hidden="true"></i>
           </div>
@@ -376,7 +374,7 @@
             <i class="fa fa-angle-right slider__nav slider__next js-slide-next" aria-hidden="true"></i>
           </div>
            <div class="flame">
-            <ul class="slider">
+            <ul class="slider js-slider">
               <li class="infor-box">
                 <a href="" class="inner-box">
                   <p class="inner-box-date">2020.06.25</p>
@@ -408,7 +406,7 @@
                 <a href="" class="inner-box">
                   <p class="inner-box-date">2020.06.25</p>
                   <div class="inner-box-thambnail-cover"></div>
-                  <img class="inner-box-image" src="./imgs/infor3.jpg" alt="" />
+                  <img class="inner-box-image" src="./imgs/infor4.jpg" alt="" />
                   <p class="inner-box-theme">ブログ</p>
                   <p class="inner-box-content">感染拡大防止の案内動画</p>
                 </a>
@@ -417,7 +415,7 @@
               <a href="" class="inner-box">
                 <p class="inner-box-date">2020.06.25</p>
                 <div class="inner-box-thambnail-cover"></div>
-                <img class="inner-box-image" src="./imgs/infor3.jpg" alt="" />
+                <img class="inner-box-image" src="./imgs/infor5.png" alt="" />
                 <p class="inner-box-theme">ブログ</p>
                 <p class="inner-box-content">感染拡大防止の案内動画</p>
               </a>
@@ -426,27 +424,21 @@
               <a href="" class="inner-box">
                 <p class="inner-box-date">2020.06.25</p>
                 <div class="inner-box-thambnail-cover"></div>
-                <img class="inner-box-image" src="./imgs/infor3.jpg" alt="" />
+                <img class="inner-box-image" src="./imgs/infor6.png" alt="" />
                 <p class="inner-box-theme">ブログ</p>
                 <p class="inner-box-content">感染拡大防止の案内動画</p>
               </a>
             </li>
-            <li class="infor-box">
-              <a href="" class="inner-box">
-                <p class="inner-box-date">2020.06.25</p>
-                <div class="inner-box-thambnail-cover"></div>
-                <img class="inner-box-image" src="./imgs/infor3.jpg" alt="" />
-                <p class="inner-box-theme">ブログ</p>
-                <p class="inner-box-content">感染拡大防止の案内動画</p>
-              </a>
-            </li>
+            
           </ul> 
+            
             <!--ここまで本当は６枚のimageがあるがとりあえず３枚。  -->
           </div>
           
           <div class="motto" ><a href="">記事一覧</a></div>
         </div>
       </div>
+          
       <!-- 　箱根へGO-->
       <div class="container-to-hakone">
         <div class="l-width">
